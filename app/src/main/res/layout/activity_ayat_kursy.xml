@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bgColor"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AyatKursyActivity">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="5dp">
+
+
+        <ImageView
+            android:id="@+id/imageViewB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_quran"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="10dp"
+    android:elevation="8dp"
+    android:background="@drawable/backgrownd_mediaplay"
+    >
+
+
+    <Button
+        android:id="@+id/btnAya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/backgrownd_btn_aya"
+        android:elevation="10dp"
+        android:fontFamily="@font/sarchia_hawin"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="ئایەتی کورسی"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnManaKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/backgrownd_btn_aya"
+        android:elevation="10dp"
+        android:fontFamily="@font/sarchia_hawin"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="ماناکەی"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSud"
+        app:layout_constraintStart_toEndOf="@+id/btnAya"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/backgrownd_btn_aya"
+        android:elevation="10dp"
+        android:fontFamily="@font/sarchia_hawin"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="سودەکەی"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/btnAyaPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_play" />
+
+            <TextView
+                android:id="@+id/txtAya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="1dp"
+                android:fontFamily="@font/al_qalam_quran_majeed"
+                android:text="بِسۡمِ اللّٰهِ الرَّحۡمٰنِ الرَّحِيۡمِ
+\n
+\n
+اللّهُ لاَ إِلَهَ إِلاَّ هُوَ الْحَیُّ الْقَیُّومُ لاَ تَأْخُذُهُ سِنَهٌ وَ لاَ نَوْمٌ لَّهُ مَا فِی
+السَّمَاوَاتِ وَمَا فِی الأَرْضِ مَن ذَا الَّذِی یَشْفَعُ عِنْدَهُ إِلاَّ بِإِذْنِهِ یَعْلَمُ
+مَا بَیْنَ أَیْدِیهِمْ وَمَا خَلْفَهُمْ وَ لاَ یُحِیطُونَ بِشَیْءٍ مِّنْ عِلْمِهِ إِلاَّ بِمَا
+شَاء وَسِعَ کُرْسِیُّهُ السَّمَاوَاتِ وَ الأَرْضَ وَ لاَ یَۆُودُهُ حِفْظُهُمَا وَ هُوَ الْعَلِیُّ الْعَظِیمُ"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+
+
+            <TextView
+                android:id="@+id/txtMana"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="1dp"
+                android:fontFamily="@font/sarchia_hawin"
+                android:text="خوا زاتێکه جگه ئه‌و هیچ خوایه‌کی ترنیه که شایه‌نی په‌رستن بێت و ئه‌و هه‌میشه زیندووه و ڕاگرو سه‌رپه‌رشتیاری (هه‌موو دروست کراوه‌کانیه‌تی)، نه وه‌نه‌وز ده‌یگرێت و نه خه‌و (چونکه ڕاگرو سه‌رپه‌رشتیاری بوونه‌وه‌ره‌)، هه‌رچی له ئاسمانه‌کان و هه‌رچی له زه‌ویدا هه‌یه هه‌ر ئه‌وزاته خاوه‌نیانه‌، کێ یه ئه‌وه‌ی (ده‌توانێت) تکا بکات له لای ئه‌و، به‌بێ مۆڵه‌تی خۆی، ده‌شزانێت چی له ئێستاو داهاتوو و ڕابووردودا ڕوویداوه‌و ڕووده‌دات، هیچ کام له دروستکراوانی زانست و زانیاری ته‌واویان نیه ده‌رباره‌ی زانیاری و زانسته‌کانی ئه‌و، مه‌گه‌ر به‌وه‌ی که خۆی بیه‌وێت فێریان بکات (ئه‌م پێشکه‌وتن و زانسته‌ی سه‌رده‌م به‌شێکی که‌من له به‌خششه‌کانی خوا)، فه‌رمانڕه‌وایی و ده‌سه‌ڵات و زانینی ئه‌وزاته هه‌موو ئاسمانه‌کان و زه‌وی گرتۆته‌وه و پارێزگاریان به‌لای خواوه هیچ گران نیه و ماندووی ناکات و هه‌ر ئه‌و خوایه‌کی به‌رزو بڵند و گه‌وره‌یه"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+            <TextView
+                android:id="@+id/txtSud"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/sarchia_hawin"
+                android:text="سودەکەی
+١: بیخوێنه‌وه‌ له‌ كاتی چونه‌ ده‌ر له‌ ماڵ، ٧٠.٠٠٠ فریشته‌ ده‌تپارێزن له‌ هه‌مو لایه‌كانه‌وه‌.\n
+٢: بیخوێنه‌ له‌ كاتی چونه‌وه‌ ماڵ، هه‌ژاری ڕو له‌ ماڵه‌ ناكات.\n\n
+٣: بیخوێنه‌ له‌ دوای ده‌ستنوێژ، ٧٠ پله‌ له‌ خوات نزیك ده‌كاته‌وه‌\n\n
+٤: بیخوێنه‌ به‌ر له‌ خه‌وتن فریشته‌یه‌ك تا به‌یانی ده‌تپارێزێ.\n
+٥: بیخوێنه‌ له‌ داوی نوێژه‌كان، تاكه‌ شت ڕێگر ده‌بێت له‌ نێوان تۆ و به‌هه‌شت، مردنه
+\n
+‌..تائیستا زانیوتە… بۆچی ناوی ئایەت الکورسیە؟\n
+چەند دەقەیەک لە کاتت بگرە بۆ زانینی واتاکەی..!\n
+– ژمارەی وشەكان : 50 وشەیە\n
+– بناغەی ئاینی ئیسلام كە یەكتاپەرستییە لەخۆی گرتووە\n
+– بە پیرۆزترین و گەورەترین ئایەتی قورئان دانراوە\n
+-17 ناوی پیرۆزی خوای گەورەی تێدایە\n
+– ئایەتەكە بەشەو دابەزیووه\n\n
+بۆچی ناوی ئایەتـی كورسیە؟
+\n
+– كورسی بناغەی دەسەڵات و نیشانەی فەرمانڕەواییە و تێیدا بناغەی ئةولەهیەتی خوای گەورەی تێدایە\n
+– خوای گـــەورە ئەو ئایەتەی بە (الله) دەستپێكردووە و بە (العلی العظیم) كۆتایی پێ هێناوە.\n
+– هەر كەس پێوەی پابەند بێت خوای گــەورە پلە و پایەی بەرز دەكاتەوە.\n\n
+پێغەمبەری خوا (صلی الله عليه وسلم) دەربارەی ئایەتی الكورسـی چی فەرمووە ؟\n
+– وَالَّذِي نَفْسِي بِيَدِهِ إِنَّ لَهَا لِسَانًا وَشَفَتَيْنِ تُقَدِّسُ الْمَلِكَ عِنْدَ سَاقِ الْعَرْشِ .\n
+واتە: سوێند بەو كەسەی منی بەدەستە، ئەو ئایەتە زمان و لێوی هەیە، تەقدیســی خوای گەورە دەكات لەژێر عەرشەكەیدا.\n
+پاداشتی خوێندنی ئەو ئایەتە:\n
+ئایەتی كورسی پاداشتی گەورە دەبةخشێتە ئەو كەسەی دەیخوێنێ، لە دنیا و لە رۆژی دواییش:\n
+-لــــــــــــــــــــە دنیادا ئەوەی بیخوێنێ لە هەرچوارلای ماڵەكەی، خوای گەورە لە شەیتان دەیپارێزێ.\n
+\n-هەر كەســـــــــــــــــــێ پێش ئەوەی سەفەر بكات بیخوێنێ بەسەر ماڵەكەیدا، خوای گەورە لە چەتە و هەموو بەڵایەك ماڵەكەی دەپارێزێت.
+-ئەوەی شەو بیخوێنـێ، خوای گەورە لە شەیتان بەدووری دەخاتە هەتا رۆژ دەبێتەوە.\n
+-هەر كەس پێش ئەوەی بخەوێت، بەسەر خۆی مـنداڵەكانیدا بیخوێنێ، خوای گەورە لە شەیتان دەیانپارێزێت و خەوی ناخۆش نابينن"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

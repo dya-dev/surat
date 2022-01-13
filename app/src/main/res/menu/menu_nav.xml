@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+<item android:title=" ">
+    <menu android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="سەرەکی"
+            android:icon="@drawable/ic_home"
+            />
+        <item
+            android:id="@+id/about"
+            android:title="دەربارەی بەرنامە"
+            android:icon="@drawable/ic_ab"
+            />
+        <item
+            android:id="@+id/developerId"
+            android:title="دەربارەی من"
+            android:icon="@drawable/ic_dev"
+            />
+
+    </menu>
+</item>
+
+
+
+<item android:title=" ">
+    <menu android:checkableBehavior="single">
+        <item
+            android:id="@+id/Share"
+            android:title="هاوبەشی پێکردن"
+            android:icon="@drawable/ic_share"
+            />
+        <item
+            android:id="@+id/Star"
+            android:title="هەڵسەنگاندن"
+            android:icon="@drawable/ic_star"
+            />
+        <item
+            android:id="@+id/Exit"
+            android:title="داخستن"
+            android:icon="@drawable/ic_exit"
+            />
+
+    </menu>
+
+</item>
+
+
+
+
+</menu>

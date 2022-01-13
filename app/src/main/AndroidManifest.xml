@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dya.surat">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Surat"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup"
+        tools:targetApi="m">
+        <activity android:name=".ActivityBangdan" />
+        <activity android:name=".AyatKursyActivity" />
+        <activity android:name=".GalleryActivity" />
+        <activity
+            android:name="com.hassanjamil.hqibla.CompassActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="fullSensor" />
+        <activity android:name=".Zikr_view_Activity" />
+        <activity android:name=".Zikr_Activity" />
+        <activity android:name=".Dasnwezh" />
+        <activity android:name=".SallahN" />
+        <activity android:name=".Tayamum" />
+        <activity android:name=".IslamB" />
+        <activity android:name=".Halla" />
+        <activity android:name=".Wc" />
+        <activity android:name=".Salah" />
+        <activity android:name=".Zakat" />
+        <activity android:name=".Tasbih" />
+        <activity android:name=".Developer" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".About" />
+        <activity android:name=".PayaKan" />
+        <activity android:name=".Kteb" />
+        <activity android:name=".NameP" />
+        <activity android:name=".Zhyan_View" />
+        <activity android:name=".Zhian_Nama" />
+        <activity android:name=".Nawakany_xuda" />
+        <activity android:name=".SuratView" />
+        <activity android:name=".Quran" />
+        <activity android:name=".SplashScreen"
+            tools:ignore="IntentFilterExportedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

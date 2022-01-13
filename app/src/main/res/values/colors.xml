@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#003B46</color>
+    <color name="colorPrimaryDark">#B8E6EC</color>
+    <color name="colorAccent">#66A5AD</color>
+    <color name="black">#003B46</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#686868</color>
+    <color name="bgColor">#B8E6EC</color>
+    <color name="mainFGColor">#E0F7FA</color>
+    <color name="mainBGColor">#71B7C0</color>
+    <color name="redColor">#FF3E01</color>
+    <color name="greenColor">#13832F</color>
+    <color name="sliderBG">#B8E6EC</color>
+    <color name="SplashScreenColor">#E0F7FA</color>
+</resources>

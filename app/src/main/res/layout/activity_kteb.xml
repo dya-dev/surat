@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainFGColor"
+    tools:context=".Kteb">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/cardeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_book"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.363" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nrt_bd"
+            android:text="کتێبە ئاسمانیەکان"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="199dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishbold_bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/KtebaPirozekan"
+                android:layout_marginTop="10dp"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishlight_light"
+                android:textColor="@color/black"
+                android:text="@string/KtebaPirozekanDrezha"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishbold_bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/bawarBunBaKteb"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishlight_light"
+                android:textColor="@color/black"
+                android:text="@string/bawarBunBaKtebDrezha"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="right"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishbold_bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/laQuran"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishbold_bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/zabur"
+                android:layout_marginTop="10dp"
+                android:textSize="23sp"
+                android:layout_gravity="right"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishlight_light"
+                android:textColor="@color/black"
+                android:text="@string/zaburDRezha"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="right"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishbold_bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/tawrat"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:layout_gravity="right"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishlight_light"
+                android:textColor="@color/black"
+                android:text="@string/tawratDrezha"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="right"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishbold_bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/Enjil"
+                android:layout_marginTop="10dp"
+                android:textSize="23dp"
+                android:layout_gravity="right"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishlight_light"
+                android:textColor="@color/black"
+                android:text="@string/EnjilDrezha"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="right"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishbold_bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/Quran"
+                android:layout_marginTop="10dp"
+                android:textSize="23sp"
+                android:layout_gravity="right"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishlight_light"
+                android:textColor="@color/black"
+                android:text="@string/QuranDrezha"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="right"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishbold_bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/sarchawa"
+                android:layout_marginTop="10dp"
+                android:textSize="30sp"
+                android:layout_gravity="right"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishbold_bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/yek"
+                android:layout_marginTop="10dp"
+                android:textSize="30sp"
+                android:layout_gravity="right"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishbold_bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/dw"
+                android:layout_marginTop="10dp"
+                android:textSize="30sp"
+                android:layout_gravity="right"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishbold_bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/se"
+                android:layout_marginTop="10dp"
+                android:textSize="30dp"
+                android:layout_gravity="right"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishbold_bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/chwar"
+                android:layout_marginTop="10dp"
+                android:textSize="30dp"
+                android:layout_gravity="right"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishbold_bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/penj"
+                android:layout_marginTop="10dp"
+                android:textSize="30dp"
+                android:layout_gravity="right"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishbold_bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/shash"
+                android:layout_marginTop="10dp"
+                android:textSize="30dp"
+                android:layout_gravity="right"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/k24kurdishbold_bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/haft"
+                android:layout_marginTop="10dp"
+                android:textSize="30dp"
+                android:layout_gravity="right"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
