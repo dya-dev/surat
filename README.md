@@ -1,4 +1,6 @@
 # surat
+Surat is a kurdish Islamic application " open source "
+
 ![HiShoot_20220113_195954](https://user-images.githubusercontent.com/97687889/149378374-57455f20-cb31-4766-9171-c774517da96d.png)
 ![HiShoot_20220113_200005](https://user-images.githubusercontent.com/97687889/149378712-78bc3639-2ee6-4b95-9eb6-a64a60e3e08f.png)
 
